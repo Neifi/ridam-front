@@ -1,0 +1,7 @@
+{
+  "name": "ridam-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
