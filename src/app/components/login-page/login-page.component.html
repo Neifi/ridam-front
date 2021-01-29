@@ -1,0 +1,80 @@
+<ion-grid>
+  <ion-row class="logo">
+    <ion-col>
+      <img src="../../../assets/logos/B_N RIDAM.png" alt="RIDAM" class="logo-img">
+    </ion-col>
+  </ion-row>
+  <ion-row class="formSquare">
+
+    <ion-col>
+      <div class="login-input">
+        <h1 class="sign-text">Sign in</h1>
+        <form
+          [formGroup]="loginForm"
+          (ngSubmit)="log()"
+          class="login-input-block"
+        >
+        
+          <ion-input
+            formControlName="username"
+            type="email"
+            name="email"
+            id=""
+            placeholder="Email"
+            aria-controls="a"
+            class="input-username"
+          >
+            <ion-icon name="at"> </ion-icon>
+          
+          </ion-input>
+
+          <ion-input
+            formControlName="password"
+            type="password"
+            name="password"
+          
+            placeholder="Password"
+            class="input-password"
+          >
+            <ion-icon slot="start" name="key"></ion-icon>
+            
+          </ion-input>
+
+          <div class="login-button">
+            <button (click)="login()">Login</button>
+          </div>
+        </form>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="social-login">
+    <ion-col size="4" class="deco-bar">
+      <hr>
+    </ion-col>
+    <ion-col size="4" class="or-use">
+      <p>Or use</p>
+    </ion-col>
+    <ion-col size="4" class="deco-bar">
+      <hr>
+    </ion-col>
+    <ion-col>
+      <a href="">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="">
+        <ion-icon name="logo-google"></ion-icon>
+      </a>
+      <a href="">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+    </ion-col>
+  </ion-row>
+  <ion-row class="register-account">
+    
+    <ion-col size="12">
+      <p class="register-text">Don't have account yet?<a href="/"> Sign up</a></p>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
